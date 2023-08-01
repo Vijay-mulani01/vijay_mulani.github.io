@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header class="l-header">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav__logo"><span
+                        style="font-size: xxx-large;color: rgb(203, 121, 227);">V</span>ijay</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <section class="home" id="home">
+            <div class="home_data">
+                Hello 👋, My name is <span class="vijay">Vijay.</span><br>
+                <span>I'm a <span id="typed-text"></span></span><br>
+                <div class="resumebtn">
+                    <a href="assets/Resume/Vijay Mulani Updated.pdf" download="Resume.pdf">
+                <button class="button">Download Resume</button></a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="assets/img/dev.png">
+            </div>
+        </section>
+        <section class="about section " id="education">
+            <h2 class="section-title">Education</h2>
+
+            <div class='container mx-auto mt-5 col-md-10 mt-100'>
+                <div class="header">
+                    <div class="profile"> <img src="assets/img/logo.jpg" class="img-fluid" alt="Responsive image"></div>
+                    <div class="title" style="font-size: 2vw;">Bachelor's of Engineering(I.T.)</div>
+                    <p><small class="text-muted">Shantilal Shah Engineering
+                            College<br />2020-present<br><br></small><br /></p>
+                </div>
+            </div>
+            
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills-section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-wrapper">
+            <div class="first-set">
+                <img src="assets/img/python.png" alt="" loading="lazy" class="icon icon-card"/>
+                <img src="assets/img/java.png" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/img/database.png" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+            <div class="second-set">
+                <img src="assets/img/nodejs.png" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/img/angular.png" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/img/javascipt.png" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+            <div class="third-set">
+                <img src="assets/img/php.png" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/img/C_Programming_Language.svg.png" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/img/html.png" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+            <div class="fourth-set">
+                <img src="assets/img/css-3.png" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+        </div>
+        </section>
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form" onclick="contact(); reset(); return false;">
+                    <input type="text" placeholder="Name" class="contact__input" id="name">
+                    <input type="mail" placeholder="Email" class="contact__input" id="email">
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input" itemid="body"></textarea>
+                    <input type="submit" value="submit" class="contact__button button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+
+        <div class="footer__social">
+            <a href="https://www.facebook.com/VIJAY.MULANI.01" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/invites/contact/?i=hxxky5mkg1ui&utm_content=ac7jolq" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/Vijay-mulani01" class="footer__icon"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/vijay-mulani" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <p class="footer__copy">&#169; Vijay. All rigths reserved</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        var typed = new Typed('#typed-text', {
+            strings: ['Python Developer', 'Web Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</script>
+</body>
+
+</html>
